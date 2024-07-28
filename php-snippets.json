@@ -1,0 +1,100 @@
+{
+    "PHP One-Line Tags": {
+        "prefix": "php-oneline",
+        "body": [
+            "<?php $0 ?>"
+        ],
+        "description": "Inserts PHP opening and closing tags on a single line with 2-space indentation"
+    },
+    "PHP Open and Close Tags": {
+        "prefix": "php-tags",
+        "body": [
+            "<?php",
+            "  $0",
+            "?>"
+        ],
+        "description": "Inserts PHP opening and closing tags with 2-space indentation"
+    },
+    "PHP Open Tag Only": {
+        "prefix": "php-open",
+        "body": [
+            "<?php",
+            "  $0"
+        ],
+        "description": "Inserts PHP opening tag only with 2-space indentation"
+    },
+    "PHP Foreach Loop (Traditional with Tags)": {
+        "prefix": "foreach-traditional-tags",
+        "body": [
+            "<?php",
+            "  foreach (${1:array} as ${2:key} => ${3:value}) {",
+            "    ${4:// code}",
+            "  }",
+            "?>"
+        ],
+        "description": "Inserts a PHP foreach loop structure using traditional curly brace syntax with 2-space indentation and PHP tags"
+    },
+    "PHP Foreach Loop (Traditional without Tags)": {
+        "prefix": "foreach-traditional",
+        "body": [
+            "foreach (${1:array} as ${2:key} => ${3:value}) {",
+            "  ${4:// code}",
+            "}"
+        ],
+        "description": "Inserts a PHP foreach loop structure using traditional curly brace syntax with 2-space indentation and no PHP tags"
+    },
+    "PHP Foreach Loop (Alternative with Tags)": {
+        "prefix": "foreach-alternative-tags",
+        "body": [
+            "<?php foreach (${1:array} as ${2:key} => ${3:value}) : ?>",
+            "  ${4:// code}",
+            "<?php endforeach; ?>"
+        ],
+        "description": "Inserts a PHP foreach loop structure using alternative colon syntax with 2-space indentation and PHP tags"
+    },
+    "PHP Foreach Loop (Alternative without Tags)": {
+        "prefix": "foreach-alternative",
+        "body": [
+            "foreach (${1:array} as ${2:key} => ${3:value}) :",
+            "  ${4:// code}",
+            "endforeach;"
+        ],
+        "description": "Inserts a PHP foreach loop structure using alternative colon syntax with 2-space indentation and no PHP tags"
+    },
+    "PHP Short Echo": {
+        "prefix": "echo-short",
+        "body": [
+            "<?= ${1:expression} ?>"
+        ],
+        "description": "Inserts PHP short echo (<?= ?>) with 2-space indentation"
+    },
+    "PHP Regular Echo": {
+        "prefix": "echo",
+        "body": [
+            "<?php echo ${1:expression}; ?>"
+        ],
+        "description": "Inserts a PHP echo statement (<?php echo ?>) with 2-space indentation"
+    },
+    "Traditional If-Else": {
+        "prefix": "if-else-traditional",
+        "body": [
+            "if (${1:condition}) {",
+            "  ${2:// code}",
+            "} else {",
+            "  ${3:// code}",
+            "}"
+        ],
+        "description": "Creates a traditional if-else statement."
+    },
+    "Alternative If-Else": {
+        "prefix": "if-else-alternative",
+        "body": [
+            "if (${1:condition}):",
+            "  ${2:// code}",
+            "else:",
+            "  ${3:// code}",
+            "endif;"
+        ],
+        "description": "Creates an alternative if-else statement."
+    }
+}
